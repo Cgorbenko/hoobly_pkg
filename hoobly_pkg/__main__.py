@@ -1,6 +1,9 @@
-# This file gets called when the package is being run
+from .hoobly import Hoobly
+
 
 def main():
+    hoobly = Hoobly()
+    hoobly.open_home_page()    
     print("executing")
 
 
