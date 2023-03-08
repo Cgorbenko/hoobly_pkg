@@ -15,6 +15,7 @@ class Browser:
         self.driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install())
         )
+        self.driver.implicit_wait(5)
 
     def close(self):
         """Closes the browser"""

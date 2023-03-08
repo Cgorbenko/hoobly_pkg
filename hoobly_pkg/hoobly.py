@@ -6,4 +6,5 @@ class Hoobly():
     
     def open_home_page(self):
         browser = Browser()
+        browser.driver.get(browser.base_url)
         time.sleep(4)
